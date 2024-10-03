@@ -1,0 +1,99 @@
+Problema #1: Generador de Discurso Político 
+
+Imagina que formas parte de un equipo de campaña que necesita crear discursos políticos rápidamente. Para ello, contarás con una tabla de palabras y frases predefinidas para distintas secciones de un discurso: título, público objetivo, condición social, compromiso político, lucha social, promesa, beneficio populista y cantidad de votos (ver Fig. 1). El programa deberá construir un mensaje político seleccionando aleatoriamente una palabra o frase de cada categoría. El mensaje final debe mostrarse al terminar la ejecución del programa. Se recomienda el uso de listas, ciclos y la función de selección aleatoria para generar el discurso. Ejemplo: “Apreciados amigos con su ayuda venceré la pobreza y promoveré la igualdad de la comunidad.”
+
+ALGORITMO
+Algoritmo para un programa que genere discursos políticos
+
+Inicio
+
+1. Crear una lista llamada "discurso"
+2. Para cada elemento en la lista "titulos":
+Añadir el elemento a la lista "discurso"
+3. Para cada elemento en la lista "publico_objetivo":
+Añadir el elemento a la lista "discurso"
+4. Para cada elemento en la lista "condicion_social":
+Añadir el elemento a la lista "discurso"
+5. Para cada elemento en la lista "compromiso_politico":
+Añadir el elemento a la lista "discurso"
+6. Para cada elemento en la lista "lucha_social":
+Añadir el elemento a la lista "discurso"
+7. Para cada elemento en la lista "promesa":
+Añadir el elemento a la lista "discurso"
+8. Para cada elemento en la lista "beneficio_populista":
+Añadir el elemento a la lista "discurso"
+9. Para cada elemento en la lista "votos":
+Añadir el elemento a la lista "discurso"
+10. Agregar la lista "discurso"
+
+Fin
+
+
+PSEUDOCÓDIGO
+Program Generador_discurso_politico
+// Programa para generar un discurso político rápidamente
+
+Start
+// Declarar las listas para cada categoría
+
+Declare list titulos = ["Queridos", "Apreciados", "Distinguidos", "Honorables", "Estimados", "Respetados"]
+
+Declare list publico_objetivo = ["compatriotas", "copartidarios", "amigos", "coterraneos", "conciudadanos", "electores"]
+
+Declare list condicion_social = ["en mi gobierno", "Con su apoyo", "siendo elegido", "con su ayuda", "si me siguen", "durante mi mandato"]
+
+Declare list compromisos_politicos = ["voy a derrotar", "venceré", "eliminaré", "acabaré", "lucharé contra", "combatiré"]
+
+Declare list lucha_social = ["la violencia y", "La delincuencia y", "La corrupción y", "La inflación y", "La pobreza y", "El hambre y"]
+
+Declare list promesa = ["trabajaré por", "garantizaré", "protegeré", "velaré por", "promoveré", "defenderé"]
+
+Declare list beneficio_populista = ["la educación", "el empleo", "la seguridad", "la paz", "la igualdad", "la salud"]
+
+Declare list votos = ["del país", "de la ciudad", "de la comunidad", "de la población", "para toda la gente", "de cada colombiano"]
+
+// Declarar las variables para almacenar las selecciones
+Declare String titulo
+Declare String audiencia
+Declare String condicion
+Declare String compromiso
+Declare String ilusion
+Declare String promesa
+Declare String beneficio
+Declare String cantidad_votos
+
+// Seleccionar aleatoriamente valores de cada lista
+Set titulo = seleccionar aleatoriamente titulos
+Set audiencia = seleccionar aleatoriamente publico_objetivo
+Set condicion = seleccionar aleatoriamente condicion_social
+Set compromiso = seleccionar aleatoriamente compromisos_politicos
+Set ilusion = seleccionar aleatoriamente lucha_social
+Set promesa = seleccionar aleatoriamente promesa
+Set beneficio = seleccionar aleatoriamente beneficio_populista
+Set cantidad_votos = seleccionar aleatoriamente votos
+
+// Construir el discurso combinando las selecciones
+Declare String discurso
+Set discurso = titulo + " " + audiencia + ", " + condicion + ", " + compromiso + " " + ilusion + " " + promesa + " " + beneficio + " " + cantidad_votos + "."
+
+// Mostrar el discurso generado
+Display discurso
+
+End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
